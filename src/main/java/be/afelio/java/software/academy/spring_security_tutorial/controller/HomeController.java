@@ -10,6 +10,11 @@ public class HomeController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(HomeController.class);
 
+    @RequestMapping("/securityNone" )
+    public void none() {
+        LOGGER.info("none");
+    }
+
     @RequestMapping("/home" )
     public void hello() {
         LOGGER.info("hello");

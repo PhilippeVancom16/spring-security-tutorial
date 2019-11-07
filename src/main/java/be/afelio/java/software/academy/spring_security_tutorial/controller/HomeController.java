@@ -11,7 +11,7 @@ public class HomeController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(HomeController.class);
 
-    @PreAuthorize("hasRole('ROLE_USER') or hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ROLE_USER') or hasRole('ROLE_ADMIN')")     // Premiere methode
     @RequestMapping("/home" )
     public void hello() {
         LOGGER.info("hello");

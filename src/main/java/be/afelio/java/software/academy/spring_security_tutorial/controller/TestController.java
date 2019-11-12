@@ -12,7 +12,7 @@ public class TestController {
     private static final Logger LOGGER = LoggerFactory.getLogger(TestController.class);
 
     @PreAuthorize("hasRole('ROLE_ADMIN')")    // Premiere methode
-    @RequestMapping("/test" )
+    @RequestMapping("/test")
     public void test() {
         LOGGER.info("test");
     }

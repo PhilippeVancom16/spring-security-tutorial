@@ -12,13 +12,13 @@ public class HomeController {
     private static final Logger LOGGER = LoggerFactory.getLogger(HomeController.class);
 
     @PreAuthorize("hasRole('ROLE_USER') or hasRole('ROLE_ADMIN')")     // Premiere methode
-    @RequestMapping("/home" )
+    @RequestMapping("/home")
     public void hello() {
         LOGGER.info("hello");
     }
 
 
-    @RequestMapping("/securityNone" )
+    @RequestMapping("/securityNone")
     public void none() {
         LOGGER.info("none");
     }
